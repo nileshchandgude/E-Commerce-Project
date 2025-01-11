@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", serif;
   background-color: #e7e0e0;
+  color: #333;
 }
 
 header {
@@ -36,18 +37,110 @@ nav {
 .nav-links ul li a {
   text-decoration: none;
   color: white;
-  transition: color 0.4s;
+  transition: color 0.4s ease;
 }
 
 .nav-links ul li a:hover {
   color: orangered;
 }
 
-.banner-container,
-.category,
-.featured-products,
-.Customer-Testimonials {
-  width: 80%;
+.banner {
+  background-color: #f15821de;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-container {
+  text-align: center;
+}
+
+.banner-container h2,
+.banner-container p {
+  margin-bottom: 10px;
+}
+
+.banner-container button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.4s ease;
+}
+
+.banner-container button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
   margin-top: 20px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.category,
+.product {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.category img,
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.customer-testimonials {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.testimonial {
+  background-color: #444;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+}
+
+.testimonial p {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.testimonial h3 {
+  font-size: 0.9em;
+  margin-top: 1em;
+  color: #ff6347;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+.footer p {
+  margin: 0;
 }
