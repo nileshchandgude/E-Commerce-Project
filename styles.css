@@ -4,14 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-background-color: #cfd4df;
+  --header-background-color: #556ab8;
+  --nav-links-color: #ede8f5;
+  --banner-background-color: #9fadd3;
+  --font-color: #0a1544;
+}
+
 body {
   font-family: "Roboto", serif;
-  background-color: #e7e0e0;
-  color: #333;
+  background-color: var(--body-background-color);
+  color: var(--font-color);
 }
 
 header {
-  background-color: #161515b7;
+  background-color: var(--header-background-color);
 }
 
 nav {
@@ -36,20 +44,25 @@ nav {
 
 .nav-links ul li a {
   text-decoration: none;
-  color: white;
-  transition: color 0.4s ease;
+  color: var(--nav-links-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .nav-links ul li a:hover {
-  color: orangered;
+  color: var(--font-color);
+  background-color: var(--banner-background-color);
+  font-weight: 700;
 }
 
 .banner {
-  background-color: #f15821de;
+  background-color: var(--banner-background-color);
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--font-color);
 }
 
 .banner-container {
@@ -65,15 +78,16 @@ nav {
   padding: 10px 20px;
   border: none;
   outline: none;
-  background-color: #333;
-  color: white;
+  border-radius: 20px;
+  background-color: var(--header-background-color);
+  color: var(--nav-links-color);
   transition: background-color 0.4s ease;
 }
 
 .banner-container button:hover {
   cursor: pointer;
-  background-color: white;
-  color: black;
+  background-color: var(--font-color);
+  /* color: var(--header-background-color); */
 }
 
 .container {
@@ -96,7 +110,7 @@ nav {
 
 .category,
 .product {
-  background-color: white;
+  background-color: var(--banner-background-color);
   text-align: center;
   padding: 10px;
   border-radius: 8px;
@@ -109,15 +123,15 @@ nav {
 }
 
 .customer-testimonials {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--header-background-color);
+  color: var(--font-color);
   text-align: center;
   padding: 30px;
   margin-top: 20px;
 }
 
 .testimonial {
-  background-color: #444;
+  background-color: var(--banner-background-color);
   padding: 2em;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -132,12 +146,12 @@ nav {
 .testimonial h3 {
   font-size: 0.9em;
   margin-top: 1em;
-  color: #ff6347;
 }
 
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--header-background-color);
+  color: var(--font-color);
+  font-weight: 700;
   text-align: center;
   padding: 1em 0;
 }
