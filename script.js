@@ -1,5 +1,6 @@
 const toggleBtn = document.getElementById("toggle");
 const modeIcon = document.getElementById("modeIcon");
+const hambergerMenu = document.querySelector(".hamberger-menu");
 document.documentElement.setAttribute("data-theme", "light");
 const theme = localStorage.getItem("theme");
 if (theme) {
@@ -27,5 +28,11 @@ if (toggleBtn) {
       }
       document.documentElement.setAttribute("data-theme", "dark");
     }
+  });
+}
+
+if (hambergerMenu) {
+  hambergerMenu.addEventListener("click", () => {
+    document.querySelector(".nav-links-ul").classList.toggle("display-menu");
   });
 }
