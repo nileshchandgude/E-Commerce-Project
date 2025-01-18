@@ -221,9 +221,16 @@ nav {
 .toggle-button i {
   color: var(--nav-links-color);
 }
-
+.products-comparision {
+  overflow: auto;
+}
 .products-comparision-container {
   padding: 2rem;
+  text-align: center;
+}
+
+.products-comparision-container h2 {
+  margin-bottom: 1rem;
 }
 #products-comparision-table {
   width: 100%;
@@ -242,6 +249,9 @@ td {
 
 .products-comparision-container thead {
   background-color: var(--header-background-color);
+}
+.products-comparision-container tr td {
+  padding: 0.5rem;
 }
 
 .products-comparision-table tbody {
